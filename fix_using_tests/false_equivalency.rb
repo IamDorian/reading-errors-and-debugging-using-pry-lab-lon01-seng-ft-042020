@@ -12,9 +12,9 @@ def prompt_user
 end
 
 def selection(num)
-  if num = 1
+  if num == 1
    return "HAM HAM HAM IN MY TUMMY"
-  elsif num = 2
+  elsif num == 2
     return "YUM YUM MUNCH MUNCH MUNCH"
   end
   #binding.pry
@@ -22,5 +22,5 @@ end
 
 def runner
   prompt_user
-  selection(gets.chomp)
+  selection(get_user_input)
 end
